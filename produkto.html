@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+  <!--Import materialize.css
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://code.jquery.com/jquery-2.0.0.js">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+-->
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://code.jquery.com/jquery-2.0.0.js">
+    <!-- Lato Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  
+    <!-- Stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+
+   <title>FISOFT</title>
+   <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+
+   <!-- <link rel = "stylesheet"
+      href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <link rel="stylesheet" href="css/main.css">   -->
+   <script type = "text/javascript"
+      src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+   </script>
+      <style type="text/css" media="screen">
+/*.nav-wrapper {
+  background: linear-gradient(to bottom right, #ce93d8 0%, #9900cc 100%);
+}  */
+	.nav-wrapper {
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); 
+      background-color: #DCD9D4; 
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
+ background-blend-mode: soft-light,screen; 
+ background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+ background-color: white;
+	}   
+
+  .nav-wrapperBold {
+      /*background: linear-gradient(to bottom right, #283048 0%, #859398 100%);*/
+       background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }   
+
+  .portfolio{
+ background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+	} 
+  .waves-effect.waves-blue .waves-ripple {
+   /* The alpha value allows the text and background color
+   of the button to still show through. */
+   /* background-color: rgba(121, 85, 72, 0.65); 
+    background-color: rgb(28, 97, 168, 0.65); */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+
+  .slides{
+  		background-color: red;
+  } 
+  .grad1 {
+  /*  height: 200px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));  Standard syntax (must be last) 
+    background: linear-gradient(to bottom right, #283048 0%, #859398 100%); */
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+  .contenido{
+    min-height:150px;
+  }
+  .nav-wrapper {
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); 
+    background-color: #DCD9D4; 
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
+    background-blend-mode: soft-light,screen; 
+    
+    background-color: white; 
+    */
+    background-color:rgba(0,0,0,0.87);
+  }  
+  nav {
+    color: red;
+    background-color: white;
+  } 
+  
+  .nav-wrapper {
+    background-color: white;
+  }
+  .nav-wrapperBold {
+    /*background: linear-gradient(to bottom right, #283048 0%, #859398 100%);*/
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }   
+  
+  .portfolio{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+  } 
+  .waves-effect.waves-blue .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+    /* background-color: rgba(121, 85, 72, 0.65); 
+    background-color: rgb(28, 97, 168, 0.65); */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+  
+  .slides{
+    background-color: red;
+  } 
+  .grad1 {
+    /*  height: 200px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));  Standard syntax (must be last) 
+    background: linear-gradient(to bottom right, #283048 0%, #859398 100%); */
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+  .contenido{
+    min-height:150px;
+  }
+  .shopify-payment-button__button--hidden {
+    visibility: hidden;
+  }
+  
+  .shopify-payment-button__button {
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0 0 transparent;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    width: 100%;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .shopify-payment-button__button[disabled] {
+    opacity: 0.6;
+    cursor: default;
+  }
+  
+  .shopify-payment-button__button--unbranded {
+    background-color: #1990c6;
+    padding: 1em 2em;
+  }
+  
+  .shopify-payment-button__button--unbranded:hover:not([disabled]) {
+    background-color: #136f99;
+  }
+  
+  .shopify-payment-button__more-options {
+    background: transparent;
+    border: 0 none;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .shopify-payment-button__more-options:hover:not([disabled]) {
+    text-decoration: underline;
+  }
+  
+  .shopify-payment-button__more-options[disabled] {
+    opacity: 0.6;
+    cursor: default;
+  }
+  
+  .shopify-payment-button__button--branded {
+    display: flex;
+    flex-direction: column;
+    min-height: 44px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .shopify-payment-button__button--branded .shopify-cleanslate {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .back-btn{padding:0;border:none;background-color:red;color:white} 
+  .imgs {
+    max-height:237px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }  
+  .back-btn{
+    color: #555;
+  }
+      </style>
+
+</head>
+
+<body id="home" class="scrollspy">
+  <!-- Navbar -->
+
+    <div  >
+      <nav class="nav-wrapper" style="min-height:75px"> 
+        <div class="container">
+          <div class="">
+          <a href="#" class="brand-logo blue-text darken-3" style="padding:5px"> 
+          	<img src="img/logo.jpg" class="responsive-img" >   
+          	FISOFT 
+          </a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger blue-text darken-3">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+
+            <li>
+              <a href="#home" class="waves-effect waves-blue waves-ripple hoverable blue-text darken-3">Inicio</a>
+            </li>
+            <li>
+              <a href="#nosotros" class="waves-effect waves-blue waves-ripple hoverable blue-text darken-3">Nosotros</a>
+            </li>
+
+            <li>
+              <a href="#productos" class="waves-effect waves-blue waves-ripple hoverable blue-text darken-3">Productos</a>
+            </li>
+            <li>
+              <a href="#servicios" class="waves-effect waves-blue waves-ripple hoverable blue-text darken-3">Servicios</a>
+            </li>
+            <li>
+              <a href="#contact" class="waves-effect waves-blue waves-ripple hoverable blue-text darken-3" >Contáctenos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-nav">
+    <li >
+      <a href="#home" lass="waves-effect waves-blue waves-ripple hoverable blue-text darken-3">Inicio</a>
+    </li>
+    <li>
+      <a href="#nosotros" class="waves-effect waves-blue waves-ripple hoverable blue-text darken-3">Nosotros</a>
+    </li>
+    <li> 
+      <a href="#productos" target="_blank" class="waves-effect waves-blue waves-ripple hoverable blue-text darken-3">Productos</a>
+    </li>
+    <li> 
+      <a href="#servicios" class="waves-effect waves-blue waves-ripple hoverable blue-text darken-3">Servicios</a>
+    </li>
+    <li>
+      <a href="#contact" class="waves-effect waves-blue waves-ripple hoverable blue-text darken-3">Contáctenos</a>
+    </li>
+  </ul>
+
+  <!-- Gallery -->
+  <div id="portfolio" class="cx gray">
+    <div class="db">
+      <h4 class="center">
+        <span class="blue-text">Nuestros</span> Productos
+      </h4>
+      <p>En FISOFT desarrollamos soluciones de Software personalizadas que se ajustan 
+        a las diferentes áreas y necesidades de la gestión empresarial
+      </p>
+      <p>Nuestras soluciones son desarrolladas en ambientes web, lo que permite portabilidad 
+        y alta disponibilidad. Se emplean diferentes motores de bases de datos como : SQL,
+        MySQL, Oracle, Postgres entre otros. 
+      </p>
+      
+      <div class="b e">
+        <div class="d hf gu gallery-item en gallery-expand ce polygon">
+          <div class="gallery-curve-wrapper">
+            <div class="gallery-header">
+              <h4>PSC</h4>
+              <p>
+                Portal de Servicios al Colaborador
+              </p>
+            </div>
+            <div class="gallery-body">
+              <div class="title-wrapper">
+                <h3>PSC</h3>
+                <span class="gk">Portal de Servicios al Colaborador</span>
+              </div>
+              
+              <img src="psc.jpg" class="responsive-img imgs" alt="Portal de Servicios al Colaborador">
+              
+              <p class="fi">Nace de la necesidad de los usuarios por recibir oportunamente
+                información en cuanto a gestión humana, el cual demanda un soporte
+                con servicio de alta calidad, eficiete, continuo e independiente
+                de su localización geográfica.
+              </p>
+              <p class="fi">Trámite de Solicitudes de Servicio como: </p>
+              <ul>
+                <li  class="fi">Vacaciones</li>
+                <li class="fi">Permisos</li>
+                <li class="fi">Licencias</li>
+                <li class="fi">Aprobar o rechazar las solicitudes de colaboradores</li>
+                <li class="fi">Informes detallados de pago de nómina y liquidación de comisiones</li>
+                <li class="fi">Certificados laborales, comprobantes de pago, ingresos y retenciones</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="d hf gu gallery-item en gallery-expand ce polygon">
+          <div class="gallery-curve-wrapper">
+            <div class="gallery-header">
+              <h4>SNA</h4>
+              <p>Software de Nómina Automático</p>
+            </div>
+            <div class="gallery-body">
+              <div class="title-wrapper">
+                <h3>SNA</h3>
+                <span class="gk">Software de Nómina Automático</span>
+              </div>
+
+              <img src="nomina.jpg" class="responsive-img imgs" alt="Software de Nómina Automático">
+
+              <ul class="fi">
+                <li class="fi">La implementación es flexible, ágil y no requiere grandes consultorías</li>
+                <li class="fi">Liquidación de nómina por empleado en tiempo mínimo (0.01 seg por empleado)</li>
+                <li class="fi">Software actualizado con las normas establecidas por la ley Colombiana</li>
+                <li class="fi">Eliminación del margen de error en el proceso de liquidación</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="d hf gu gallery-item en gallery-expand ce polygon">
+          <div class="gallery-curve-wrapper">
+            <div class="gallery-header">
+              <h4>SLC</h4>
+              <p>Software de Liquidación de Comisiones</p>
+            </div>
+            <div class="gallery-body">
+              <div class="title-wrapper">
+                <h3>SLC</h3>
+                <span class="gk">Software de Liquidación de Comisiones</span>
+              </div>
+
+              <img src="comisiones.jpg" class="responsive-img imgs" alt="Software de Liquidación de Comisiones">
+
+              <ul class="fi">
+                <li class="fi">Configuración de modelos y perfiles de comisiones</li>
+                <li class="fi">Cálculo de comisiones</li>
+                <li class="fi">Interfaz de software de nómina para el pago</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="d hf gu gallery-item en gallery-expand ce polygon">
+          <div class="gallery-curve-wrapper">
+            <div class="gallery-header">
+              <h4>P & C</h4>
+              <p>Software de Presupuesto y Control</p>
+            </div>
+            <div class="gallery-body">
+              <div class="title-wrapper">
+                <h3>P & C</h3>
+                <span class="gk">Software de Presupuesto y Control</span>
+              </div>
+
+              <img src="presupuesto.jpg" class="responsive-img imgs" alt="Software de Presupuesto y Control">
+
+              <ul class="fi">
+                  <li class="fi">Software para el registro y control de presupuestos de todas las obras de ejecución del Aeropuerto Internacional El Dorado</li>
+                  <li class="fi">Registro de APU y actividades de cobro</li>
+                  <li class="fi">Registro y control de subcontratos de Obra</li>
+                  <li class="fi">Reportes e informes para interventoría y ANI</li>
+              </ul>                                
+            </div>
+           </div>
+         </div>
+    
+         <div class="d hf gu gallery-item en gallery-expand ce polygon">
+            <div class="gallery-curve-wrapper">
+              <div class="gallery-header">
+                <h4>SCA</h4>
+                <p>
+                    Software de Control de Activos
+                </p>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3>PSC</h3>
+                  <span class="gk">Software de Control de Activos</span>
+                </div>
+                
+                <img src="activos.jpg" class="responsive-img imgs" alt="Software de Control de Activos">
+                
+                <ul>
+                  <li  class="fi">Registro de activos para el control por usuario y área</li>
+                  <li class="fi">Registro de bajas de los equipos por daño, perdida o deterioro</li>
+                  <li class="fi">Ficha técnica con firma de los usuarios a cargo</li>
+                  <li class="fi">Informe de disponibilidad de equipos</li>
+                  <li class="fi">Reportes del total de activos con precio y fechas de compra</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d hf gu gallery-item en gallery-expand ce polygon">
+            <div class="gallery-curve-wrapper">
+              <div class="gallery-header">
+                <h4>GIT</h4>
+                <p>Gestión de Tecnología Informática</p>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3>GIT</h3>
+                  <span class="gk">Gestión de Tecnología Informática</span>
+                </div>
+  
+                <img src="git.jpg" class="responsive-img imgs" alt="Gestión de Tecnología Informática">
+               
+                <ul class="fi">
+                  <li class="fi">Generación de informe de gestión de actividades del área</li>
+                  <li class="fi">Registro de requerimientos o tickets de los usuarios para el control y seguimiento de las respuestas y tiempos</li>
+                  <li class="fi">Estadísticas de soporte por área y temas que permitan definir plan de trabajo y actividades como capacitaciones</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d hf gu gallery-item en gallery-expand ce polygon">
+            <div class="gallery-curve-wrapper">
+              <div class="gallery-header">
+                <h4>CRM</h4>
+                <p>Gestión y Desarrollo de Apps</p>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3>CRM</h3>
+                  <span class="gk">Gestión y Desarrollo de Apps</span>
+                </div>
+  
+                <img src="crm.jpg" class="responsive-img imgs" alt="psc">
+  
+                <p class="fi">Registro de eventos como:</p>
+                <ul class="fi">
+                  <li class="fi">Llamadas</li>
+                  <li class="fi">Mails</li>
+                  <li class="fi">Citas, ...</li>
+                </ul>
+                
+               <p class="fi">Documentos asociados al cliente como:</p>
+               <ul class="fi">
+                  <li class="fi">Facturas</li>
+                  <li class="fi">Notas</li>
+                  <li class="fi">Egresos</li>
+                  <li class="fi">Recibos de caja</li>
+                </ul>               
+
+                <ul class="fi">
+                    <li class="fi">Historial comercial del cliente</li>
+                    <li class="fi">Información relacionada de acuerdo al contrato o servicio prestado</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d hf gu gallery-item en gallery-expand ce polygon">
+            <div class="gallery-curve-wrapper">
+              <div class="gallery-header">
+                <h4>SFP</h4>
+                <p>Sistema de Facturación POS</p>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3>SFP</h3>
+                  <span class="gk">Sistema de Facturación POS</span>
+                </div>
+  
+                <img src="presupuesto.jpg" class="responsive-img imgs" alt="Sistema de Facturación POS">
+                <ul class="fi">
+                    <li class="fi">Permite el control del inventario en tiempo real</li>
+                    <li class="fi">Control de Ingresos y Salida de mercancía</li>
+                    <li class="fi">Informes de ventas de puntos</li>
+                    <li class="fi">Análisis Estadísticos por:</li>
+                    <li class="fi">Punto de Venta</li>
+                    <li class="fi">Fechas</li>
+                    <li class="fi">Productos con mayor rotación</li>
+                    <li class="fi">Margen de utilidad por producto</li>
+                </ul>                                
+              </div>
+             </div>
+           </div>
+       
+           <div class="d hf gu gallery-item en gallery-expand ce polygon">
+              <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                  <h4>SRV</h4>
+                  <p>
+                      Sistema para el Registro de Visitantes
+                  </p>
+                </div>
+                <div class="gallery-body">
+                  <div class="title-wrapper">
+                    <h3>SRV</h3>
+                    <span class="gk">Sistema para el Registro de Visitantes</span>
+                  </div>
+                  
+                  <img src="srv.jpg" class="responsive-img imgs" alt="psc">
+                  
+                  <ul>
+                    <li  class="fi">Registro fotográfico y control de visitantes</li>
+                    <li class="fi">Informe Estadístico de visitantes por área</li>
+                    <li class="fi">Conocimiento en tiempo real de la cantidad de visitantes que se encuentran en la compañía</li>
+                    <li class="fi">Recolección de la información de los visitantes mediante los documentos de identificación presentados al ingreso</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="d hf gu gallery-item en gallery-expand ce polygon">
+              <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                  <h4>SGTR</h4>
+                  <p>Sistema de Gestión de Tarjetas Recargables</p>
+                </div>
+                <div class="gallery-body">
+                  <div class="title-wrapper">
+                    <h3>SGTR</h3>
+                    <span class="gk">Sistema de Gestión de Tarjetas Recargables</span>
+                  </div>
+    
+                  <img src="tarjetas.png" class="responsive-img imgs" alt="Sistema de Gestión de Tarjetas Recargables">
+                 
+                  <p class="fi">Se compone de 4 sistemas:</p>
+              
+                  <ul class="fi">
+                    <li class="fi">TDL : Tiquetera Digital Local</li>
+                    <li class="fi">TDR : Tiquetera Digital en Red</li>
+                    <li class="fi">VDL : Valera Digital Local</li>
+                    <li class="fi">VDL : Valera Digital en Red</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="d hf gu gallery-item en gallery-expand ce polygon">
+              <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <h4>G & D Apps</h4>
+                    <p>Gestión y Desarrollo de Apps</p>
+                  </div>
+                  <div class="gallery-body">
+                    <div class="title-wrapper">
+                      <h3>G & D Apps</h3>
+                      <span class="gk">Gestión y Desarrollo de Apps</span>
+                    </div>
+      
+                    <img src="apps.jpg" class="responsive-img imgs" alt="Gestión y Desarrollo de Apps">
+        
+                    <ul class="fi">
+                      <li class="fi">Agrega valor a tu oferta actual de productos</li>
+                      <li class="fi">Diferencia tu empresa de tus competidores</li>
+                      <li class="fi">Atrae nuevos clientes y proporciona servicios mas avanzados de los que ya tienes</li>
+                      <li class="fi">Posiciona tu negocio a la vanguardia de la tecnología</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="d hf gu gallery-item en gallery-expand ce polygon">
+              <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                  <h4>SSP</h4>
+                  <p>Soluciones de Software Personalizado</p>
+                </div>
+                <div class="gallery-body">
+                  <div class="title-wrapper">
+                    <h3>SSP</h3>
+                    <span class="gk">Soluciones de Software Personalizado</span>
+                  </div>
+    
+                  <img src="SoftwarePersonalizado.jpg" class="responsive-img imgs" alt="Soluciones de Software Personalizado">
+
+                  <ul class="fi">
+                      <li class="fi">Desarrollos de logística</li>
+                      <li class="fi">Desarrollos para el área de logística</li>
+                      <li class="fi">Desarrollos para control de inventarios</li>
+                      <li class="fi">Reportes estadísticos</li>
+                      <li class="fi">Otros...</li>
+                  </ul>                                
+                </div>
+               </div>
+             </div>        
+     </div>      
+   </div>    
+</div><!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="section nav-wrapper white-text center">
+    <p class="flow-text blue-text">Fisoft &copy; 2018 </p>
+  </footer>
+
+
+  <!-- Core Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/materialize/0.98.0/js/materialize.min.js"></script>
+  <script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/gallery.min.opt.js?17655579694218948187" crossorigin="anonymous"></script>
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <script>
+      $(".dropdown-trigger").dropdown();
+        
+  </script>
+
+  <script>
+      function expandAll(){
+        $(".collapsible-header").addClass("active");
+        $(".collapsible").collapsible({accordion: false});
+      }
+      
+      function collapseAll(){
+        $(".collapsible-header").removeClass(function(){
+          return "active";
+        });
+        $(".collapsible").collapsible({accordion: true});
+        $(".collapsible").collapsible({accordion: false});
+      }
+  </script>
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems, options);
+      });
+    
+      // Or with jQuery
+    
+      $(document).ready(function(){
+        $('.collapsible').collapsible();
+      });
+</script>
+
+  <script>
+    // Sidenav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+
+    // Slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+      indicators: false,
+      height: 500,
+      transition: 500,
+      // interval: 6000
+      interval: 4000
+    });
+
+
+
+    // Material Boxed
+    const mb = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(mb, {});
+
+    // ScrollSpy
+    const ss = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(ss, {});
+
+  </script>
+</body>
+
+</html>
